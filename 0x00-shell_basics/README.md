@@ -18,3 +18,5 @@
    * Script that describe how to move file
 9. 8-firstdelete
    * Script that deletes betty file in /tmp/my_first_directory directory
+10. 9-firstdirdeletion
+    * Script that deletes my_first_directory directory in /tmp directory
