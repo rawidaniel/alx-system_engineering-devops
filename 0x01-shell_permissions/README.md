@@ -16,3 +16,5 @@
    * Script that adds execute permission to the owner and the group owner, and read permission to other users, to the file hello.
 8. 7-everybody
    * Write a script that adds execution permission to the owner, the group owner and the other users, to the file hello.
+9. 8-James_Bond
+   * Script that sets all permission only for users to the file hello.
