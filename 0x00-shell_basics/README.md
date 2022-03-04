@@ -14,5 +14,7 @@
    * Script that display current directory contents with user and group IDs displayed numerically in long format including hidden files
 7. 6-firstdirectory
    * Script that create my_first_directory directory in /tmp directory
-8. 7. Betty in my first directory
+8. 7-movethatfile
    * Script that describe how to move file
+9. 8-firstdelete
+   * Script that deletes betty file in /tmp/my_first_directory directory
