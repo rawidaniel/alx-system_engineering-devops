@@ -37,4 +37,6 @@
 18. 102-tree
     * Script that creates the directories welcome/, welcome/to/ and welcome/to/school/
 19. 103-commas
-    *Script that displays lists of files and directories end with a slash, start with a dot, separeted by commas and orderedin alpha except .and ..
+    * Script that displays lists of files and directories end with a slash, start with a dot, separeted by commas and orderedin alpha except .and ..
+20. school.mgc
+    * : 0 string SCHOOL School data !:mime school Create a magic file called school.mgc that can be used with the command file to detect School data files. School  data files always contain "SCHOOL" at offset 0.
