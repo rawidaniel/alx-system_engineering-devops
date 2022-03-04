@@ -20,3 +20,5 @@
    * Script that sets all permission only for users to the file hello.
 10, 9-John_Doe
     * Script that sets the mode of the file hello to long format.
+11. 10-mirror_permissions
+    * Script that sets the mode of the file hello the same as olleh’s mode.
