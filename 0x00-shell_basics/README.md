@@ -36,3 +36,5 @@
     * Script that deletes all files in the current working directory that end with the character ~
 18. 102-tree
     * Script that creates the directories welcome/, welcome/to/ and welcome/to/school/
+19. 103-commas
+    *Script that displays lists of files and directories end with a slash, start with a dot, separeted by commas and orderedin alpha except .and ..
