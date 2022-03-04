@@ -18,3 +18,5 @@
    * Write a script that adds execution permission to the owner, the group owner and the other users, to the file hello.
 9. 8-James_Bond
    * Script that sets all permission only for users to the file hello.
+10, 9-John_Doe
+    * Script that sets the mode of the file hello to long format.
