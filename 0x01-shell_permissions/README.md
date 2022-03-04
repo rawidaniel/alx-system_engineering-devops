@@ -22,3 +22,5 @@
     * Script that sets the mode of the file hello to long format.
 11. 10-mirror_permissions
     * Script that sets the mode of the file hello the same as olleh’s mode.
+12. 11-directories_permissions
+    * Script that adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users. Regular files should not be changed.
