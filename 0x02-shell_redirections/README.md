@@ -29,4 +29,6 @@
 12. 13-unique
     * Script that takes a list of words as input and prints only words that appear exactly once. Word should be sorted.
 13. 14-findthatword
-    * Script that displays lines containing the pattern “root” from the file /etc/passwd. 
+    * Script that displays lines containing the pattern “root” from the file /etc/passwd.
+14. 15-countthatword
+    * Script that displays the number of lines that contain the pattern “bin” in the file /etc/passwd. 
