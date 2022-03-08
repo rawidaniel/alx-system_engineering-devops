@@ -27,4 +27,6 @@
 11. 12-newest_files
     * Script that displays the 10 newest files in the current directory.
 12. 13-unique
-    * Script that takes a list of words as input and prints only words that appear exactly once. Word should be sorted. 
+    * Script that takes a list of words as input and prints only words that appear exactly once. Word should be sorted.
+13. 14-findthatword
+    * Script that displays lines containing the pattern “root” from the file /etc/passwd. 
