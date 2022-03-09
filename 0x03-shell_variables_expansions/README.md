@@ -14,3 +14,5 @@
    * Script that lists all local variables and environment variables, and functions.
 7. 6-create_local_variable
    * Script  that creates a new local variable name BEST and vaue School.
+8. 7-create_global_variable
+   * Script that creates a new global variable name BEST and value School.
