@@ -22,3 +22,5 @@
    * Script that prints the result of POWER divided by DIVIDE, followed by a new line. Which POWER and DIVIDE are environment variables.
 11. 10-love_exponent_breath
     * Script that displays the result of BREATH to the power LOVE.Which BREATH and LOVE are environment variables.
+12. 11-binary_to_decimal
+    * Script that converts a number from base 2 to base 10.
