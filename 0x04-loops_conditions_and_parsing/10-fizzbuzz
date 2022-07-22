@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# This script is display number formm 1 t0 100 except FizzBuzz for multiple
+# of 3 an 5, Fizz multiple of 3 and Buzz for multiple of 5
+
+
+for num in {1..100}
+do
+  if [ "$(( num % 3))" == 0 ] && [ "$(( num % 5))" == 0 ]
+  then
+    echo "FizzBuzz"
+  elif [ "$(( num % 3))" == 0 ]
+  then
+    echo "Fizz"
+  elif [ "$(( num % 5))" == 0 ]
+  then
+    echo "Buzz"
+  else
+    echo "$num"
+  fi
+done
