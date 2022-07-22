@@ -8,8 +8,7 @@ while [ $n -le 9 ]
 do
   if [ $n -eq 8 ]
   then
-    echo "Best School"
-    echo "Hi"
+    echo -e "Best School\nHi"
   else
     echo "Best School"
   fi
