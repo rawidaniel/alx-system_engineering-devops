@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+# Shellcheck style wants dummy _ variable if not used
+
+n=0
+until [ $n -gt 9 ]
+do
+   echo "Best School"
+   (( n++ ))
+done
