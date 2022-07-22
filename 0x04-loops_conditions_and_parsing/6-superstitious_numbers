@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# This script is displaying number for all iteration and additional
+# message "bad luck from China" at 4,"bad luck from Japan" at 8  and
+#"bad luck from Italy" at 17 iteration
+
+n=1
+while [ $n -le 20 ]
+do
+  echo "$n"
+  case $n in
+    4 )
+    echo "bad luck from China" ;;
+    9 )
+    echo "bad luck from Japan" ;;
+    17 )
+    echo "bad luck from Italy" ;;
+  esac
+  (( n++ ))
+done
