@@ -4,9 +4,9 @@
 # Shellcheck style wants dummy _ variable if not used
 
 n=0
-while [ $n -le 9 ]
+while [ $n -le 10 ]
 do
-  if [ $n -eq 8 ]
+  if [ $n -eq 9 ]
   then
     echo "Hi"
   else
