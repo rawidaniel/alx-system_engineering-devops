@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" for all iteration except 
+#"bad luch" at 4 and "goodluck" at 8 iteration
+
+n=1
+while [ $n -le 10 ]
+do
+  if [ $n -eq 4 ]
+  then
+    echo "bad luck"
+  elif [ $n -eq 8 ]
+  then
+    echo "good luck"
+  else
+   echo "Best School"
+  fi
+  (( n++ ))
+done
+
