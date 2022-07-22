@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
-# This script is displaying "Best School" 9 times
-# and "hi" 1 time at nine iteration
-# Shellcheck style wants dummy _ variable if not used
+# This script is displaying "Best School" 9 times and "hi" 1 time at nine iteration
 
-n=0
-while [ $n -le 9 ]
+n=1
+while [ $n -le 10 ]
 do
-  if [ $n -eq 8 ]
+  if [ $n -eq 9 ]
   then
     echo -e "Best School\nHi"
   else
