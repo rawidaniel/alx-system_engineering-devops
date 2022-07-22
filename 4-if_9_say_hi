@@ -2,13 +2,12 @@
 # This script is displaying "Best School" 9 times and "hi" 1 time at nine iteration
 
 n=1
-while [ $n -le 10 ]
+while [ "$n" -le 10 ]
 do
-  if [ $n -eq 9 ]
+  echo "Best School"
+  if [ "$n" -eq 9 ]
   then
-    echo -e "Best School\nHi"
-  else
-    echo "Best School"
+    echo "Hi"
   fi
   (( n++ ))
 done
