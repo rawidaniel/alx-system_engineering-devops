@@ -4,10 +4,11 @@
 # Shellcheck style wants dummy _ variable if not used
 
 n=0
-while [ $n -le 10 ]
+while [ $n -le 9 ]
 do
-  if [ $n -eq 9 ]
+  if [ $n -eq 8 ]
   then
+    echo "Best School"
     echo "Hi"
   else
    echo "Best School"
