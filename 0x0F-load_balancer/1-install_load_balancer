@@ -11,8 +11,8 @@ apt-get -y install haproxy=1.8.\*
 sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.backup
 
 sed -i '/errorfile 504/a listen abadan' /etc/haproxy/haproxy.cfg
-sed -i '/listen abadan/a         bind :80' /etc/haproxy/haproxy.cfg
-sed -i '/bind :80/a         mode http' /etc/haproxy/haproxy.cfg
+sed -i '/listen abadan/a         bind *:80' /etc/haproxy/haproxy.cfg
+sed -i '/bind *:80/a         mode http' /etc/haproxy/haproxy.cfg
 sed -i '/mode http/a        balance roundrobin' /etc/haproxy/haproxy.cfg
 sed -i '/balance roundrobin/a         server 23969-web-01 3.238.230.209:80 check' /etc/haproxy/haproxy.cfg
 sed -i '/server 23969-web-01 3.238.230.209:80 check/a         server 23969-web-02 18.205.104.232:80 check' /etc/haproxy/haproxy.cfg
