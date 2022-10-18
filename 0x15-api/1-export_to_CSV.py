@@ -22,5 +22,6 @@ if __name__ == '__main__':
         formated_list.append(entery)
     fields = ["userId", "username", "completed", "title"]
     with open(f'{userId}.csv', 'w') as csv_file:
-        csv_writer = csv.DictWriter(csv_file, fieldnames=fields)
+        csv_writer = csv.DictWriter(csv_file, fieldnames=fields,
+                                    quoting=csv.QUOTE_ALL)
         csv_writer.writerows(formated_list)
