@@ -1,15 +1,17 @@
 #!/usr/bin/python3
 """
-Reterive information about his/her TODO list progres
+Reterive information about his/her todo list progres
 for a given employee ID
 """
 
 import requests
 import sys
 
+
 if __name__ == '__main__':
     args = int(sys.argv[1])
-    user = requests.get('https://jsonplaceholder.typicode.com/users/{}')
+    user = requests.get('https://jsonplaceholder.typicode.com/users/{}'
+                        .format(args))
     todo = requests.get('https://jsonplaceholder.typicode.com/todos')
     data_user = user.json()
     data_todo = todo.json()
