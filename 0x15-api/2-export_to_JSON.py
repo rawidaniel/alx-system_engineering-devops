@@ -23,6 +23,6 @@ if __name__ == '__main__':
             new_dict['completed'] = entery['completed']
             new_dict['username'] = username
             formated_list.append(new_dict)
-    dict = {f'{userId}': formated_list}
+    dict_new = {f'{userId}': formated_list}
     with open(f"{userId}.json", 'w') as write_file:
-        json.dump(dict, write_file)
+        json.dump(dict_new, write_file)
