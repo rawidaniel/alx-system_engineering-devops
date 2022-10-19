@@ -4,7 +4,6 @@ Reterive information about his/her todo list progres
 for a given employee ID
 """
 
-
 import requests
 import sys
 
@@ -14,9 +13,8 @@ if __name__ == '__main__':
     user = requests.get('https://jsonplaceholder.typicode.com/users/{}'
                         .format(args))
     todo = requests.get('https://jsonplaceholder.typicode.com/todos')
-    data_todo = todo.json()
     name = user.json().get('name')
-    new_list = [i for i in data_todo if i.get("userId") == int(args)]
+    new_list = [i for i in todo.json() if i.get("userId") == int(args)]
     total_task = len(new_list)
     done = [i for i in new_list if i.get('completed') is True]
     done_task = len(done)
