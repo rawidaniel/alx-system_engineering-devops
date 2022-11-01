@@ -5,6 +5,7 @@ posts listed for a given subreddit
 """
 import requests
 
+
 def top_ten(subreddit):
     """
     Reterive top ten titles for a given subreddit
