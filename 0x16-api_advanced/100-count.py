@@ -24,28 +24,27 @@ def count_words(subreddit, word_list, instances={}, after="", count=0):
     response = requests.get(url, headers=headers, params=params,
                             allow_redirects=False)
     try:
+        results = response.json()
         if response.status_code == 404:
             raise Exception
     except Exception:
-        print("")
         return
-    results = response.json()
     results = results.get("data")
     after = results.get("after")
     count += results.get("dist")
     for c in results.get("children"):
         title = c.get("data").get("title").lower().split()
         for word in word_list:
+            word_key = word.lower()
             if word.lower() in title:
-                times = len([t for t in title if t == word.lower()])
-                if instances.get(word) is None:
-                    instances[word] = times
+                times = len([t for t in title if t == word_key])
+                if instances.get(word_key) is None:
+                    instances[word_key] = times
                 else:
-                    instances[word] += times
+                    instances[word_key] += times
 
     if after is None:
         if len(instances) == 0:
-            print("")
             return
         sort_key = sorted(instances.keys())
         [print("{}: {}".format(k, instances[k])) for k in sort_key]
