@@ -1,0 +1,20 @@
+http {
+
+	server {
+		
+		# Make the server listen on port 80
+		listen		127.0.0.1:80;
+		listen		80 default_server;
+
+		# Add location block
+		location /airbnb-onepage/ {
+		
+		# Proxy pass to gunicorn
+		proxy_pass http://0.0.0.0:5000/airbnb-onepage/;
+
+
+		}
+
+	}
+
+}
