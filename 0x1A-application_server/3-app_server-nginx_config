@@ -16,12 +16,9 @@ http {
 		}
 
 		# Add another location block
-		location ~^ /airbnb-dynamic/number_odd_or_even/(\d+)$ {
-		
-		# Proxy pass to gunicorn
-		proxy_pass http://0.0.0.0:5001/airbnb-dynamic/number_odd_or_even/$1;
-
-		}
+	        location /airbnb-dynamic/number_odd_or_even/ {
+			proxy_pass http://0.0.0.0:5001/number_odd_or_even/;
+	        }
 
 	}
 
